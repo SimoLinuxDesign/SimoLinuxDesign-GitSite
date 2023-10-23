@@ -28,13 +28,13 @@ body {font-family: 'Ubuntu', sans-serif;}
 .openmenu .line2{ transform: scale(0) translate(150%, 100%); }
 
 /*Navbar*/
-.main-nav { display:none; left:0; top:0; height: 100vh; width:100vw; justify-content: center; align-items: center; background-color:rgba(11, 14, 0, 0.828); position:fixed; z-index: 300; overflow-y: hidden;backdrop-filter: blur(0.6px); opacity:0; transform: translateX(-100%); transition: opacity 600ms, transform 400ms;}
-.showmenu { display:flex;}
-.main-menu { list-style-type: none;}
-.main-menu-item {background-color:rgba(164, 177, 125, 0.567); padding:20px; margin:20px; text-align: center; width:100%; border-top: 3px solid var(--border-item-menu-col); border-bottom: 3px solid var(--border-item-menu-col); border-radius: 10px; transition: all ease-in-out 100ms;}
-.main-menu-item:hover {background-color: rgba(137, 171, 0, 0.864);}
-.main-menu-item:active{background-color: rgba(176, 192, 0, 0.864)}
-.main-menu-link {text-decoration: none; font-size: 1.87em; color:white; font-weight: bold; }
+.main-nav { display:none; left:0; top:0; height: 100vh; width:100vw; background-color:rgba(11, 14, 0, 0.828); position:fixed; z-index: 300; overflow-y: hidden; backdrop-filter: blur(0.6px); opacity:0; transform: translateX(-100%); transition: opacity 600ms, transform 400ms;}
+.showmenu { display:block;}
+.main-menu { list-style-type: none; margin:5em auto; padding:0; position:relative; max-width:50%;}
+.main-menu-item {margin:4.62em auto; text-align: center; width:85%;}
+.main-menu-link:hover {background-color: rgba(137, 171, 0, 0.864); border-color:#50f128; }
+.main-menu-link:active{background-color: rgba(176, 192, 0, 0.864); border-color:#a3f48f;}
+.main-menu-link {text-decoration: none; font-size: 1.87em; color:white; font-weight: bold; content: ""; display: block; border-top: 5px solid var(--border-item-menu-col); border-bottom: 5px solid var(--border-item-menu-col); transition: all ease-in-out 300ms; overflow:hidden; background-color:rgba(12, 62, 0, 0.262);  border-radius:20px 20px 20px 20px; padding:30px 1em;}
 .effecton {opacity:1; transform:translateX(0);}
 
 /*content*/
@@ -73,7 +73,18 @@ a:visited {text-decoration: none;}
 .soc-youtube:active {color:rgb(255, 44, 72); transform:scale(0.85);}
 .soc-tiktok:active {color:rgb(209, 255, 255); transform:scale(0.85);}
 
+@media screen and (max-width: 1100px) {
+  .main-header {padding:0.5 2.3em 1em 1em;}
+  .text-logo {font-size:2.5em;}
+  .buttonline {width:3.2em; height:0.40em;}
 
-
+  /*button menu mobile*/
+  .main-button-menu .line1{ transform:translateY(-12px); }
+  .main-button-menu .line3{ transform:translateY(+12px); }
+  .openmenu { transform: scale(1) /*rotate(225deg)*/; }
+  .openmenu .line1{ transform: rotate(225deg); }
+  .openmenu .line3{ transform: rotate(-225deg); }
+  .openmenu .line2{ transform: scale(0) translate(150%, 100%); }
+}
 
 
