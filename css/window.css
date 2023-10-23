@@ -61,5 +61,6 @@
   .window-h3 {font-size: 2.9em;}
   .window-list li{ font-size:30px; border-bottom: 3px solid black; width:60%; margin:0 auto; padding:10px 0}
   .content {height:100em !important;}
+  .window-list, .window-cont {height: 70%;}
 
 }
