@@ -1,0 +1,9 @@
+Modifiche Fatte:
+
++ Aggiunta Progress Bar
++ Ridotta la dimensione dell'header
+
+Modifiche da fare:
+- Aggiungere JSON per creare link dinamici
+- Rendere Progress e layout Progetti anche per Script e Tutorial
+- Aggiungere una funzione per attivare e disattivare il bottone "Back"

@@ -1,0 +1,5 @@
+@keyframes logogradient {
+  0%{background-position:0% 86%}
+  50%{background-position:100% 15%}
+  100%{background-position:0% 86%}
+}

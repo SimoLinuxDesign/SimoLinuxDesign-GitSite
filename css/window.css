@@ -1,0 +1,57 @@
+/* Window Grid */
+.wg-title{grid-area:w-title; margin-bottom: 1em;}
+.wg-list{grid-area:w-list; border: var(--b-int-window); border-radius: var(--br-int-window); background-color:var(--bg-int-window); box-shadow: var(--shad-int-window); padding:var(--pd-int-window); overflow:hidden;}
+.wg-icon{grid-area:w-icon; border: var(--b-int-window); border-radius: var(--br-int-window); background-color:var(--bg-int-window); box-shadow: var(--shad-int-window); padding:var(--pd-int-window);}
+.wg-desc{grid-area:w-desc; border: var(--b-int-window); border-radius: var(--br-int-window); background-color:var(--bg-int-window); box-shadow: var(--shad-int-window); padding:var(--pd-int-window);}
+.wg-desc::-webkit-scrollbar{display:none;}
+.wg-back{grid-area:w-backbtn;}
+
+/* Window Style */
+.window-out { 
+  display:grid;
+  padding:1em 3em 2em 3em;
+  background-color: rgba(40, 40, 40, 0.8); 
+  box-shadow: var(--shad-int-window);
+  width:90vw; 
+  height:90vh; 
+  margin:0 auto; 
+  border: var(--b-int-window); 
+  border-radius: 25px; 
+  overflow: hidden; 
+  gap: 2.5em;
+  grid-template-columns: 1fr 0.2fr 1fr 0.5fr; 
+  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-areas: 
+    "w-title w-title w-title w-title"
+    "w-list w-list w-icon w-icon"
+    "w-list w-list w-desc w-desc"
+    "w-backbtn w-backbtn w-backbtn w-backbtn";
+  }
+.window-out > div {text-align: center;}
+.window-title { padding:0.9em 0 0.1em 0;  border-radius: 0 0 25px 25px;}
+.window-out .main-title {padding:0; margin:0;}
+
+/* Windows Cont */
+.window-cont {height:90%; width: auto; overflow: scroll; margin-top:0.1em}
+.window-cont::-webkit-scrollbar{display:none;}
+.window-h3 { background: var(--main-font-gradient); -webkit-text-stroke: var(--font-border);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.7em;}
+
+/*Window List*/
+.window-list ul {margin-top:1em; list-style-type: none;}
+.window-list li {margin:0.50em 0;}
+.window-list a {padding:0.70em; color:rgb(36, 36, 36); font-size:1.5em; font-weight: bold; -webkit-text-stroke: 1px rgb(243, 243, 243);transition:color 0.5s, transform 0.3s;}
+.window-list a:hover {color:#37a408; transform:scale(1.0);}
+.window-list a:active {color:#a7b303; transform:scale(0.9);}
+
+/*Window Progress Bar*/
+.list-progress-bar {position:relative; /*background-color:rgba(34, 34, 34, 0.78)*/; background-image:-webkit-linear-gradient(90deg, rgba(32, 32, 32, 0.9), rgba(60, 60, 60, 0.9), rgba(60, 60, 60, 0.9), rgba(32, 32, 32, 0.9)); height:1em; border-radius: 100px;}
+
+/* Window Back Button */
+.window-button-back {background-color:#5c9146; padding:0.5em 3em; margin-bottom:1em; border-radius: 40px; border:2px solid #62ff1f; font-size: 1.2; font-weight: bold; color:#ccffb6; cursor:pointer; transition:all ease-in-out 300ms;}
+.window-button-back:hover{background-color: #37a408; border-color: #1f6600; color:#6aff00;}
+.window-button-back-off {background-color: #5b5b5b; color:#c2c2c2; border-color: azure; cursor:default;}
+
+@media screen and (max-width: 760px) {
+  .window-out{ height:100vh; grid-template-columns: 1fr; grid-template-rows: auto 2fr auto; grid-template-areas: "w-title" "w-list" "w-backbtn";}
+  .wg-icon, .wg-desc {display:none;}
+}
