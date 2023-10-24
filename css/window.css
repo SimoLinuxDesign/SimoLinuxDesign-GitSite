@@ -62,7 +62,7 @@
   .content {height:100%;}
   .window-out {position:absolute; height:60vh; margin:30% 3%;}
   .window-h3 {font-size: 2.9em;}
-  .window-list li{ font-size:30px; border-bottom: 1px solid black; width:60%; margin:0 auto; padding:10px 0}
+  .window-list li{ font-size:30px; /*border-bottom: 1px solid black;*/ width:60%; margin:5% auto; padding:10px 0}
   /* .content {height:100em !important;} */
 
   
