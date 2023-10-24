@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-height: 2000px) {
-  .container {height:100vh;}
+  .container {height:100%;}
   
   .content {height:100%;}
   .window-out {position:absolute; height:60vh; margin:30% 3%;}
