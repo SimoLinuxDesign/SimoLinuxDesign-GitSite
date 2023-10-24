@@ -44,23 +44,27 @@
 .window-list a:active {color:#a7b303; transform:scale(0.9);}
 
 /*Window Progress Bar*/
-.list-progress-bar {position:relative; /*background-color:rgba(34, 34, 34, 0.78)*/; background-image:-webkit-linear-gradient(90deg, rgba(32, 32, 32, 0.9), rgba(60, 60, 60, 0.9), rgba(60, 60, 60, 0.9), rgba(32, 32, 32, 0.9)); height:1em; border-radius: 100px;}
+.list-progress-bar {position:relative; /*background-color:rgba(34, 34, 34, 0.78)*/; background-image:-webkit-linear-gradient(90deg, rgba(32, 32, 32, 0.9), rgba(60, 60, 60, 0.9), rgba(60, 60, 60, 0.9), rgba(32, 32, 32, 0.9)); height:1em; border-radius: 100px; margin:10px 0 0 0}
 
 /* Window Back Button */
 .window-button-back {background-color:#5c9146; padding:0.5em 3em; margin-bottom:1em; border-radius: 40px; border:2px solid #62ff1f; font-size: 1.2; font-weight: bold; color:#ccffb6; cursor:pointer; transition:all ease-in-out 300ms;}
 .window-button-back:hover{background-color: #37a408; border-color: #1f6600; color:#6aff00;}
 .window-button-back-off {background-color: #5b5b5b; color:#c2c2c2; border-color: azure; cursor:default;}
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .window-out{ height:100vh; grid-template-columns: 1fr; grid-template-rows: auto 2fr auto; grid-template-areas: "w-title" "w-list" "w-backbtn";}
   .wg-icon, .wg-desc {display:none;}
 }
 
 @media screen and (min-height: 2000px) {
-  .window-out {max-height:70vh;}
+  .container {height:100vh;}
+  
+  .content {height:100%;}
+  .window-out {position:absolute; height:60vh; margin:30% 3%;}
   .window-h3 {font-size: 2.9em;}
-  .window-list li{ font-size:30px; border-bottom: 3px solid black; width:60%; margin:0 auto; padding:10px 0}
-  .content {height:100em !important;}
-  .window-list, .window-cont {height: 70%;}
+  .window-list li{ font-size:30px; border-bottom: 1px solid black; width:60%; margin:0 auto; padding:10px 0}
+  /* .content {height:100em !important;} */
+
+  
 
 }
