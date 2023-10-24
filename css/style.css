@@ -46,8 +46,9 @@ body {font-family: 'Ubuntu', sans-serif;}
 .content .main-title { margin:8px 0 15px 0; text-transform: uppercase; background: var(--main-font-gradient); -webkit-text-stroke: var(--font-border);  -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; font-size: 38px; }
 
 /*Title h2 sections*/
-.content .title-section { display:inline-block; text-align: center; color:rgb(227, 252, 2); -webkit-text-stroke: 0.04em #bebebe; margin:10px 0; font-size:30px;}
-.title-section { margin-top:80px !important;}
+.content .title-section { display:inline-block; text-align: center; color:rgb(227, 252, 2); -webkit-text-stroke: 0.04em #bebebe; margin:10px 0; font-size:30px;}.title-section { margin-top:80px !important;}
+
+/*p Section*/
 .content p {background-color:transparent; transition: background-color 400ms, box-shadow 400ms; border-radius: 5px; box-shadow: 0px 0px 0px 0px rgba(0,0,0,0); font-size: 18px; }
 .content p:hover{ background-color: rgba(0,0,0,0.88) !important; box-shadow: -1px 0px 50px 18px rgba(0,0,0,0.88);}
 
@@ -92,6 +93,7 @@ a:visited {text-decoration: none;}
 
 @media screen and (min-height: 2340px) {
   .container {min-height:100vh;}
+  .content .title-section {font-size: 50px;}
 }
 
 
