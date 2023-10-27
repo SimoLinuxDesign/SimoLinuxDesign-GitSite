@@ -3,17 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title>SimoCusano-Design | Home Page</title>
-		<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/animations.css">
-		<link rel="stylesheet" href="css/window.css">
+		<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/animations.css">
+		<link rel="stylesheet" href="../css/window.css">
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-		<script src="js/main.js"></script>
+		<script src="../js/main.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container" id="container">
 
 			<header class="main-header">
 				<div class="main-logo">
@@ -30,7 +30,7 @@
 			<div class="content">
 				<nav class="main-nav">
 					<ul class="main-menu">
-						<li class="main-menu-item"><a href="index.html" class="main-menu-link">HOME</a></li>
+						<li class="main-menu-item"><a href="../index.html" class="main-menu-link">HOME</a></li>
 						<li class="main-menu-item"><a href="progetti.html" class="main-menu-link">PROGETTI</a></li>
 						<li class="main-menu-item"><a href="tutorial.html" class="main-menu-link">TUTORIAL</a></li>
 						<li class="main-menu-item"><a href="scripts.html" class="main-menu-link">SCRIPTS</a></li>
@@ -44,7 +44,7 @@
 					
 					<!-- Window Title -->
 					<div class="window-title wg-title">
-						<h1 class="main-title">Progetti</h1>
+						<h1 class="main-title">Tutorial</h1>
 					</div>
 					
 					<!-- Windows List -->
@@ -53,23 +53,8 @@
 							<h3 class="window-h3">LIST</h3>
 						</div>
 						<div class="window-cont">
-							<ul>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-								<li><a href="#">Item 1</a></li>
-
-
+							<ul class="listmenu">
+								<!-- Automatic Links !!!DONT MODIFY HERE -->
 							</ul>
 						</div>
 
@@ -81,8 +66,9 @@
 					<!-- Window Icon -->
 					<div class="window-icon wg-icon">
 						<div class="window-cont-title">
-							<h3 class="window-h3">ICON</h3>
-						</div>
+							<h3 class="window-h3 icontitle">ICON</h3>
+							<img src="../img/placeholder.webp" alt="icon" class="listicon">
+						</div> 
 					</div>
 
 					<!-- Window Description -->
@@ -91,12 +77,17 @@
 							<h3 class="window-h3">DESCRIPTION</h3>
 						</div>
 						<div class="window-cont description-cont">
+							<p class="desc-name">NAME:<span class="desc-name-inner">N/A</span></p>
+							<p class="desc-version">VERSION:<span class="desc-version-inner">N/A</span></p>
+							<p class="desc-compatibility">COMPATIBILITY:<span class="desc-compatibility-inner">N/A</span></p>
+							<hr class="desc-hr">
+							<p class="full-description">N/A</p>
 						</div>
 					</div>
 
 					<!-- Window Back Button -->
 					<div class="window-back wg-back">
-						<span class="window-button-back ">Back</span>
+						<span class="window-button-back-off ">Back</span>
 					</div>
 				</div>
 				
@@ -115,11 +106,17 @@
 			</footer>
 			
 		</div>
+		<script src="./tutorial/js/classes.js"></script>
+		<script src="./tutorial/js/menus.js"></script>
+		
+		
 		<script>
 			yearNow("#yearcopy");
 			mainmenu();
 			hidingHeaderScrolling();
 			progressbar();
+
+			// menu();
 		</script>
 	</body>
 </html>

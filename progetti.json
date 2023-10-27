@@ -1,0 +1,28 @@
+{
+	"projects": [
+		{
+			"id": 0,
+			"name-link": "YT-Down",
+			"second-menu": false,
+			"info": {
+				"name": "YT-Down",
+				"url": "Progetti/YT-Down",
+				"version": "1.0",
+				"link-image": "progetti/ytdown.png",
+				"description": "Programma per scaricare video in modo intelligente. Possibilità di scaricare playlist, o effettuare download multipli in modo veloce. Include inoltre la possibilità di salvare i link dei download effettuati."
+			}
+		},
+		{
+			"id": 1,
+			"name-link": "Xampp",
+			"second-menu": false,
+			"info": {
+				"name": "Xampp",
+				"url": "Progetti/Xampp",
+				"version": "1.0",
+				"link-image": "progetti/xampp.png",
+				"description": "Programma di installazione semplificata di xampp. Verrà aggiunta l'icona nel menu principale ed inoltre verrà creato un collegamento per la cartella 'htdocs'. Installa automaticamente il programma o può essere installato in modo automatico o manuale. P.S. verranno installati programmi fondametali."
+			}
+		}
+	]
+}

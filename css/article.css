@@ -1,0 +1,28 @@
+/* Window */
+.win-article-out {width:90vw; min-height:80vh; max-height: auto; border: 1.5px solid #171717;  padding:0 30px 0px 30px; margin:0 auto; border-radius: 25px; background-color:rgba(40, 40, 40, 0.8); box-shadow: var(--shad-int-window);}
+.win-article-in {width:-20px; min-height:100vh !important; max-height: auto; border:1.5px solid #171717; border-radius: 25px; margin:0 auto; position:relative; background-color: rgb(187, 187, 187);box-shadow: var(--shad-int-window); padding:30px;}
+.main-art-title {font-size: 50px !important; font-weight: bold; margin:0 !important; padding:18px 0;}
+
+/*Icon*/
+.art-icon-cont {width:100%; text-align: center; margin:15px auto; }
+.art-icon-cont img {width:170px; height:130px;}
+
+/* Paragrafo */
+.art-info p {font-weight: bold; -webkit-text-stroke: 0.8px #252525; font-size: 21px;}
+.art-info p span, .info-desc, .installation-text {font-weight: normal; color: #313131; font-size:17px; -webkit-text-stroke: 0.3px #535353; margin-left:6px;}
+.info-git-inner {color:#0f8300; text-decoration: underline;}
+.info-git-inner:hover {color:#77ff00;}
+.info-git-inner:active {color:#ffffff;}
+
+/* HR */
+.info-bar {border:solid 1.5px rgba(50, 50, 50, 0.837); border-radius: 50px; margin:30px auto 25px auto; width:85%;}
+
+/* Title h2 */
+.win-article-in .inst-title {display:block; margin:10px auto 20px auto !important; text-align: center;}
+
+/*Button back*/
+.buttonsback-cont {display:flex; justify-content: space-between; align-items: center; padding:20px 0; margin:0;}
+.buttonsback-cont a {padding:10px 45px; background-color: #0f8300; border: 5px solid #14a601; border-radius: 35px; font-size: 20px; margin:0; transition: all ease-in-out 150ms;}
+.buttonsback-cont a:active{background-color: #084400; transform: scale(0.9);}
+.buttonsback-cont a:hover {background-color: #084400;}
+
