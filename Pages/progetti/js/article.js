@@ -20,7 +20,7 @@ function addinfo(){
       infocomp.textContent = (menu[i].info.compatibility);
       infogit.setAttribute("href", (menu[i].info.gitURL))
       infodesc.textContent = (menu[i].info.description);
-      infoinst.textContent = (menu[i].info.install);
+      /*infoinst.textContent = (menu[i].info.install);*/
       
     }
   }

@@ -55,7 +55,7 @@ p {font-size: 1.15em;}
 a {color:#6ebe5a; text-decoration: none; transition: color 300ms;}
 a:hover {color:#50f128;}
 a:visited {text-decoration: none;}
-.advise {color:#b20000; margin: 10px auto; -webkit-text-stroke: 0.2px white;};
+.advise {color:#b20000; margin: 10px auto; -webkit-text-stroke: 0.4px rgb(98, 0, 0);};
 
 /*p Section*/
 .homepage-p{background-color:transparent; transition: background-color 400ms, box-shadow 400ms; border-radius: 5px; box-shadow: 0px 0px 0px 0px rgba(0,0,0,0); font-size: 20px; }

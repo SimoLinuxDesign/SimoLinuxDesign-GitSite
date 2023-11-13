@@ -9,10 +9,10 @@
 
 /* Paragrafo */
 .art-info p {font-weight: bold; -webkit-text-stroke: 0.8px #252525; font-size: 21px;}
-.art-info p span, .info-desc, .installation-text {font-weight: normal; color: #313131; font-size:17px; -webkit-text-stroke: 0.3px #535353; margin-left:6px;}
-.info-git-inner {color:#0f8300; text-decoration: underline;}
-.info-git-inner:hover {color:#77ff00;}
-.info-git-inner:active {color:#ffffff;}
+.art-info p span, .info-desc {font-weight: normal; color: #313131; font-size:17px; -webkit-text-stroke: 0.3px #535353; margin-left:6px;}
+.info-git-inner {color:#0f8300; text-decoration: underline #0f8300; transition:all ease-in-out 200ms}
+.info-git-inner:hover {color:#77ff00; text-decoration:underline #77ff00;}
+.info-git-inner:active {color:#ffffff;text-decoration:underline white;}
 
 /* HR */
 .info-bar {border:solid 1.5px rgba(50, 50, 50, 0.837); border-radius: 50px; margin:30px auto 25px auto; width:85%;}
@@ -26,3 +26,6 @@
 .buttonsback-cont a:active{background-color: #084400; transform: scale(0.9);}
 .buttonsback-cont a:hover {background-color: #084400;}
 
+
+/*####### Difference Font Style ########*/
+.installation-text p {color: #313131; font-size:17px; -webkit-text-stroke: 0.3px #535353;}
