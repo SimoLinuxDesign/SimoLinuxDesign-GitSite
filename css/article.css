@@ -10,15 +10,21 @@
 /* Paragrafo */
 .art-info p {font-weight: bold; -webkit-text-stroke: 0.8px #252525; font-size: 21px;}
 .art-info p span, .info-desc {font-weight: normal; color: #313131; font-size:17px; -webkit-text-stroke: 0.3px #535353; margin-left:6px;}
-.info-git-inner {color:#0f8300; text-decoration: underline #0f8300; transition:all ease-in-out 200ms}
+.info-git-inner {color:a1f201; text-decoration: underline a1f201; transition:all ease-in-out 200ms}
 .info-git-inner:hover {color:#77ff00; text-decoration:underline #77ff00;}
 .info-git-inner:active {color:#ffffff;text-decoration:underline white;}
 
 /* HR */
 .info-bar {border:solid 1.5px rgba(50, 50, 50, 0.837); border-radius: 50px; margin:30px auto 25px auto; width:85%;}
 
+/* Middle App */
+.app-center {text-align: center;}
+
 /* Title h2 */
 .win-article-in .inst-title {display:block; margin:10px auto 20px auto !important; text-align: center;}
+
+/* Step Title*/
+.step{ border-left: 4px solid #a6f801; border-radius: 5px; font-size:16px; margin-top:20px; margin-bottom:20px; font-weight: bold; padding-left: 10px; }
 
 /*Button back*/
 .buttonsback-cont {display:flex; justify-content: space-between; align-items: center; padding:20px 0; margin:0;}
@@ -26,6 +32,10 @@
 .buttonsback-cont a:active{background-color: #084400; transform: scale(0.9);}
 .buttonsback-cont a:hover {background-color: #084400;}
 
+/* Download Button  */
+.download-btn { padding:12.5px 20px; background-color:#0f8300; color:#79c13b; border:3px solid #579741; border-radius: 25px; font-weight: bold; cursor: pointer; transition: all ease-in-out 150ms;}
+.download-btn:hover{ background-color:#094c00; color:#77ff00;}
+.download-btn:active{ padding:8px 16px; font-size:12px;}
 
 /*####### Difference Font Style ########*/
 .installation-text p {color: #313131; font-size:17px; -webkit-text-stroke: 0.3px #535353;}

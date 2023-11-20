@@ -24,9 +24,24 @@ const menu=[
 				linkImage2: "../img/xampp.png",
 				name: "Xampp Installer",
 				version: "1.0.0",
-				compatibility: "Ubuntu (all), OpenSuse",
+				compatibility: "Ubuntu (all), OpenSuse, Debian (manual installation)", 
 				gitURL: "https://github.com/SimoNard91/Xampp-Installer",
 				description: "Programma di installazione semplificata di xampp. Verrà aggiunta l'icona nel menu principale ed inoltre verrà creato un collegamento per la cartella 'htdocs'. Installa automaticamente il programma o può essere installato in modo automatico o manuale. (P.S. verranno installati programmi fondametali)",
+			}
+		},
+		{
+			id: 3,
+			nameLink: "QR-Creator",
+			secondMenu: false,
+			info: {
+				url: "progetti/qrcreator/qrcreator.html",
+				linkImage: "progetti/img/qrcreator.png",
+				linkImage2: "../img/qrcreator.png",
+				name: "QR-Creator",
+				version: "1.0.0",
+				compatibility: "All Modern Browsers", 
+				gitURL: "https://github.com/SimoNard91/QR-Creator",
+				description: "Utilizzare in modo semplice QR-Code per link o testi. E' possibile aggiungere un logo personalizzato. E' possibile scegliere la dimensione del QR-code così da adattarlo a qualsiasi esigenza. A breve verrà aggiunta la possibilità di cambiare colore dei pixels.",
 			}
 		}
 	]

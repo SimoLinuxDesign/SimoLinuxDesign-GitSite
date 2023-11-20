@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../../../css/variables.css">
     <link rel="stylesheet" href="../../../css/animations.css">
 		<link rel="stylesheet" href="../../../css/article.css">
+		<link rel="stylesheet" href="qrcreator.css">
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script src="QRcode.js"></script>
 		<script src="../../../js/main.js"></script>
 	</head>
 	<body>
@@ -74,44 +76,37 @@
 
 						<!-- Windows Article Info -->
 						<div class="win-art-inst">
-							<h2 class="title-section inst-title">INSTALLATION</h2>
+							<h2 class="title-section inst-title">QRcreator App</h2>
 							<div class="installation-text">
-								<p>Vediamo come poter installare Xampp sul vostro dispositivo linux. Per prima 
-									cosa, dobbiamo essere a conoscenza che verranno installate diverse librerie
-									e verranno scaricati dei file da internet esterni a questo sito in quanto
-									questo è solo uno script che ne facilità l'installazione e l'utilizzo.</p>
-								<br>
-								<p>L'installazione può essere effettuata sia in modo "Manuale che Automatica". Solitamente
-									consiglio l'utilizzo dell'installazione automatica se si hanno le versioni
-									di linux indicate nelle compatibilità di questa pagina.</p>
-								<br>
-								<p>Spiegherò entrambi i metodi di installazione in quanto i processi di
-									installazione verranno divisi in diversi steps.</p>
-								
-								<!-- Step 1 -->
-								<p class="step">Step 1: [Prepariamo il file d'installazione.]</p>
-								<p>Per prima cosa rechiamoci sul repository git in modo da poter scaricare il programma di installazione (<a href="https://github.com/SimoNard91/Xampp-Installer">da qui;</a>).
-									Scarichiamo la cartella sul desktop (solitamente: /home/nomeutente/Scrivania) se possibile, altrimenti, una volta finito il download spostiamo la cartella appena scaricata da "Scaricati" (o Download) a Scrivania (o Desktop)</p>
-								<p>Ora apriamo il terminale e spostiamoci nella cartella scaricata con il comando "cd"</p>
-								<pre><code>cd /home/nomeutente/Scrivania/xampp</code></pre>
-								<p>Sostituire "nomeutente" con "il l'user</p>
-								<p>Una volta entrati nella cartella, diamo i permessi di lettura, esecuzione e scrittura dello script nominato "install.sh" con il comando "chmod 777" con i permessi di super-utente, così da poter proseguire con l'installazione.</p>
-								<pre><code>sudo chmod 775 install.sh</code></pre>
-								<span class="advise-s"> P.S. Per poter funzionare correttamente, sudo deve essere installato e configurato.</span>
+							<div class="app-center">
 
 								
-									<!-- Step 2 -->
-									<p class="step">Step 2: [Avviamo l'installazione automatica]</p>
-									<p>Sempre dal terminale, eseguiamo il comando:</p>
-									<pre><code>sudo ./install.sh</code></pre>
-									<p>Inseriamo la password (che potrà essere richiesta più volte durante questo processo).</p>
-									<pre><code>sudo chmod 775 install.sh</code></pre>
-									<p>Una volta avviato, ci verrà visualizzata la descrizione dello script, 
-										e sopratutto delle informazioni essenziali per la configurazione quali 
-										sono "Sistema Operativo" e "Desktop Environment", fondamentali per un'installazione manuale.
-										Una volta annotate le informazioni premiamo "Invio" per proseguire con l'installazione.</p>
-										<p>Il programma controllerà che xampp non sia già installato sul sistema operativo o che xampp quanto meno non sia già stato scaricato.</p>
-										
+								<form id="generated-form" class="generated-form">
+									<label class="qrcode-label" for="url-qrcode">Inserisci Url</label><br>
+									<input id="url-qrcode" name="url-qrcode" type="url" placeholder="Inserisci il link"><br>
+									<label class="qrcode-label" for="size-qrcode">Grandezza in Pixel</label><br>
+									<select name="size-qrcode" id="size-qrcode">
+										<option value="100">100x100</option>
+										<option value="200">200x200</option>
+										<option value="300">300x300</option>
+										<option value="400">400x400</option>
+										<option value="500">500x500</option>
+										<option value="600">600x600</option>
+										<option value="700">700x700</option>
+										<option value="800">800x800</option>
+									</select>
+								</form>
+
+								<hr class="info-bar">
+								
+								<div id="qrcode"></div>
+
+								<hr class="info-bar">
+
+								<span class="download-btn">Download</span>
+								
+								
+							</div>
 							</div>
 						</div>
 
@@ -148,13 +143,16 @@
 		hidingHeaderScrolling();
 		
 		/*This constant must to be present in all articles*/
-		const nameclass="Xampp";
+		const nameclass="QR-Creator";
 
 
 		// menu();
 	</script>
 	<script src="../js/classes.js"></script>
 	<script src="../js/article.js"></script>
+	<script type="text/javascript">
+		new QRCode(document.getElementById("qrcode"), "https://www.google.com");
+		</script>
 
 
 </body>
