@@ -1,15 +1,17 @@
 const menu=[
 		{
 			id: 0,
-			nameLink: "Example",
+			nameLink: "MP3extractor",
 			secondMenu: false,
 			info: {
-				url: "../example/example.html",
-				linkImage: "../img/placeholder.webp",
-				name: "Example Name",
+				url: "scripts/MP3extractor/MP3extractor.html",
+				linkImage: "scripts/img/MP3extractor.png",
+				linkImage2: "../img/MP3extractor.png",
+				name: "MP3extractor",
 				version: "1.0.0",
-				compatibility: "Example Compatibility",
-				description: "Per aggiungere un elemento nella lista, copia questa parte di codice iniziando dalle parentesi graffe e modificando i dati con quelli effettevi così da essere indicizzati correttamente."
+				compatibility: "All linux",
+				gitURL: "https://github.com/SimoLinuxDesign/MP3Extractor",
+				description: "Questo script è un'interfaccia virtuale del plugin 'ffmpeg', dove trasforma in modo veloce tutti i file mp4 di una cartella in mp3."
 			}
 		},
 	]
